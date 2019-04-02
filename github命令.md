@@ -15,4 +15,4 @@
 
 * 将本地git仓库与远程仓库关联
   * git remote add origin [url]
-
+* 改变了一个文件
