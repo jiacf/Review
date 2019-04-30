@@ -126,3 +126,102 @@
 - call_later()
 
   - 此方法可以通过设置定时任务和延迟时间来实现任何延迟执行，并且可以在执行前通过cancel()方法重新执行定时任务
+  
+- http_get()
+
+  - 此方法可以模拟发送HTTP的GET请求
+
+  - ```lua
+    splash:http_get{url,headers=nil,follow_redirects=true}
+    ```
+
+    - url : 请求URL
+    - headers：可选参数，默认为空，请求头
+    - follow_redirects：可选参数，表示是否启动自动重定向，默认为true
+
+- http_post()
+
+  - 此方法用来模拟发送POST请求，不过多了一个参数body
+
+  - ```
+    splash：http_post{url,headers=nil,follow_redirects=true,body=nil}
+    ```
+
+    - url：请求URL
+    - headers：可选参数，默认为空，请求头
+    - follow_redirects：可选参数，表示是否启动自动重定向，默认为true
+    - body：可选参数，即表单数据，默认为空
+
+- set_content()
+
+  - 此方法用来设置页面的内容
+
+- html()
+
+  - 此方法用来获取网页的源代码，它是非常简单又常用的方法
+
+- png()
+
+  - 此方法用来获取PNG格式的网页截图
+
+- jpeg()
+
+  - 此方法用来获取GPEG格式的网页截图
+
+- har()
+
+  - 此方法用来获取页面加载过程描述
+
+- url()
+
+  - 此方法可以获取当前正在访问的URL
+
+- get_cookies()
+
+  - 此方法可以获取当前页面的Cookies
+
+- add_cookies()
+
+  - 此方法可以为当前页面添加Cookie
+
+  - ```lua
+    splash:add_cookies{name,value,path=nil,domin=nil,httpOnly=nil,secure=nil}
+    ```
+
+- clear_cookies()
+
+  - 此方法可以清除所有的Cookies
+
+- get_viewport_size()
+
+  - 此方法可以获取当前浏览器页面的大小，即宽高
+
+- set_viewport_size()
+
+  - 此方法可以设置当前浏览器页面的大小，即宽高
+
+- set_viewport_full()
+
+  - 此方法可以设置浏览器全屏显示
+
+- set_user_agent()
+
+  - 此方法可以设置浏览器的User_Agent
+
+- set_custom_headers()
+
+  - 此方法可以设置请求头
+
+- select()
+
+  - 该方法可以选中符合条件的第一个节点，如果有多个节点符合条件，则只会返回一个，其参数是CSS选择器
+
+- select_all()
+
+  - 此方法可以选中所有符合条件的节点，其参数是CSS选择器
+
+- mouse_click()
+
+  - 此方法可以模拟鼠标点击操作，传入的参数为坐标值x和y。此外，也可以直接选中某个节点，然后调用此方法
+
+- 
