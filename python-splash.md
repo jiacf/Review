@@ -190,7 +190,7 @@
 
 - clear_cookies()
 
-  - 此方法可以清除所有的Cookies
+  - 此方法可以清除所有的Cookies	
 
 - get_viewport_size()
 
@@ -260,4 +260,4 @@
 
 - render.json
 
-  -  此接口包含了前面接口的所有功能，返回结果是JSON格式
+  -  此接口包含了前面接口的所有功能，返回结果是JSON格式	
